@@ -1,0 +1,13 @@
+-- auto-generated definition
+                                                  create table history
+                                                       (
+                                                         item_id          int auto_increment
+                                                           primary key,
+                                                         sender           varchar(32) null,
+                                                         msg_type         int         null,
+                                                         msg_content_type int         null,
+                                                         file_name         varchar(32) null,
+                                                         msg_content      mediumtext  null,
+                                                         time             datetime    null
+                                                       )
+                                                         engine = InnoDB;

@@ -1,0 +1,11 @@
+-- auto-generated definition
+create table user
+(
+  u_id      int auto_increment
+    primary key,
+  user_name varchar(32) null,
+  password  varchar(32) null,
+  brief     varchar(64) null,
+  qq_image  text        null
+)
+  engine = InnoDB;

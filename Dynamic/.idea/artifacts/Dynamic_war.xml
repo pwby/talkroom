@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Dynamic:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/Dynamic_war</output-path>
+    <root id="archive" name="Dynamic_war.war">
+      <element id="artifact" artifact-name="Dynamic:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+          <element id="library" level="project" name="commons-dbutils-1.3" />
+          <element id="library" level="project" name="hamcrest-core-1.3" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

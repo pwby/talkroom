@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="client.ui.PrivateChat">
+  <grid id="27dc6" binding="PrivateChat" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="698" height="469"/>
+    </constraints>
+    <properties>
+      <background color="-10466"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <splitpane id="21d5c" binding="jSplitP">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-10466"/>
+          <orientation value="0"/>
+          <resizeWeight value="0.7"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <scrollpane id="e1a24" binding="jUp">
+            <constraints>
+              <splitpane position="left"/>
+            </constraints>
+            <properties>
+              <background color="-10466"/>
+            </properties>
+            <border type="none" title="消息栏"/>
+            <children>
+              <component id="23ac8" class="javax.swing.JTextPane" binding="receievePane">
+                <constraints/>
+                <properties>
+                  <background color="-1"/>
+                  <editable value="false"/>
+                </properties>
+              </component>
+            </children>
+          </scrollpane>
+          <grid id="c26f0" binding="jDown" layout-manager="GridLayoutManager" row-count="3" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <splitpane position="right"/>
+            </constraints>
+            <properties>
+              <background color="-10466"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="d45c2" class="javax.swing.JTextPane" binding="sendPane">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="50"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <editable value="true"/>
+                </properties>
+              </component>
+              <grid id="d9c01" binding="jDownOfSouth" layout-manager="GridLayoutManager" row-count="1" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-10466"/>
+                </properties>
+                <border type="none" title="附加区"/>
+                <children>
+                  <component id="653a6" class="javax.swing.JButton" binding="sendFile">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <autoscrolls value="true"/>
+                      <background color="-16777216"/>
+                      <foreground color="-10466"/>
+                      <text value="发送文件"/>
+                    </properties>
+                  </component>
+                  <component id="6c863" class="javax.swing.JButton" binding="sendImage">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-16777216"/>
+                      <foreground color="-10466"/>
+                      <text value="发送图片"/>
+                    </properties>
+                  </component>
+                  <component id="5b4c1" class="javax.swing.JButton" binding="loadHistory">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-16777216"/>
+                      <foreground color="-10466"/>
+                      <text value="历史记录"/>
+                    </properties>
+                  </component>
+                  <component id="d5d1f" class="javax.swing.JButton" binding="delHistory">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-16777216"/>
+                      <foreground color="-10466"/>
+                      <text value="删除记录"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="25c58" binding="jDownOfNorth" layout-manager="GridLayoutManager" row-count="1" column-count="10" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-10466"/>
+                </properties>
+                <border type="none" title="编辑栏"/>
+                <children>
+                  <component id="f8165" class="javax.swing.JToggleButton" binding="boldBtn">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-16777216"/>
+                      <foreground color="-10466"/>
+                      <text value="B"/>
+                      <toolTipText value="粗体"/>
+                    </properties>
+                  </component>
+                  <component id="f4abc" class="javax.swing.JToggleButton" binding="italicBtn">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-16777216"/>
+                      <foreground color="-10466"/>
+                      <text value="I"/>
+                      <toolTipText value="斜体"/>
+                    </properties>
+                  </component>
+                  <component id="9f513" class="javax.swing.JComboBox" binding="fontCB">
+                    <constraints>
+                      <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="12"/>
+                      </model>
+                    </properties>
+                  </component>
+                  <component id="63f64" class="javax.swing.JComboBox" binding="fontSizeCB">
+                    <constraints>
+                      <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value="Dialog"/>
+                      </model>
+                    </properties>
+                  </component>
+                  <component id="4cb08" class="javax.swing.JButton" binding="foreBtn">
+                    <constraints>
+                      <grid row="0" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-16777216"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="4d2cc" class="javax.swing.JButton" binding="sendExpress">
+                    <constraints>
+                      <grid row="0" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-16777216"/>
+                      <foreground color="-10466"/>
+                      <text value="发送表情"/>
+                    </properties>
+                  </component>
+                  <component id="83c" class="javax.swing.JLabel" binding="fontLabel">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <background color="-16777216"/>
+                      <font style="1"/>
+                      <foreground color="-16777216"/>
+                      <text value="字体 :"/>
+                    </properties>
+                  </component>
+                  <component id="cb525" class="javax.swing.JLabel" binding="fontSizeLabel">
+                    <constraints>
+                      <grid row="0" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="1"/>
+                      <foreground color="-16777216"/>
+                      <text value="字体大小 :"/>
+                    </properties>
+                  </component>
+                  <component id="50437" class="javax.swing.JLabel" binding="bladitalicLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="1"/>
+                      <foreground color="-16777216"/>
+                      <inheritsPopupMenu value="false"/>
+                      <text value="样式 :"/>
+                    </properties>
+                  </component>
+                  <component id="210a0" class="javax.swing.JLabel" binding="fontColorLabel">
+                    <constraints>
+                      <grid row="0" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="1"/>
+                      <foreground color="-16777216"/>
+                      <text value="颜色 :"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="a0d87" class="javax.swing.JButton" binding="sendBtn">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16777216"/>
+                  <foreground color="-10466"/>
+                  <text value="发送"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </splitpane>
+    </children>
+  </grid>
+</form>

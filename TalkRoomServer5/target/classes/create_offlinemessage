@@ -1,0 +1,13 @@
+-- auto-generated definition
+create table offlinemessage
+(
+  msg_id      int auto_increment
+    primary key,
+  sender      varchar(32) null,
+  receiver   varchar(32) null,
+  msg_type    varchar(16) null,
+  msg_content longtext    null,
+  file_name   varchar(64) null,
+  send_time   datetime    null
+)
+  engine = InnoDB;
